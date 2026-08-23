@@ -3,146 +3,158 @@
 
   <!-- Halaman Utama -->
   <url>
-    <loc>https://perlengkapankantor.web.id/index.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Halaman Kategori Utama -->
   <url>
-    <loc>https://perlengkapankantor.web.id/furnitur-kantor.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/furnitur-kantor</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/meja-kantor.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/meja-kantor</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/kursi-kantor.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/kursi-kantor</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/lemari-rak.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/lemari-rak</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/paket.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/paket</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Halaman Detail Produk Meja -->
   <url>
-    <loc>https://perlengkapankantor.web.id/meja-direktur.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/meja-direktur</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/meja-staff.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/meja-staff</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/meja-rapat.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/meja-rapat</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/meja-resepsionis.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/meja-resepsionis</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Halaman Detail Produk Kursi -->
   <url>
-    <loc>https://perlengkapankantor.web.id/kursi-direktur.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/kursi-direktur</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/kursi-manager.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/kursi-manager</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/kursi-staff.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/kursi-staff</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/kursi-tamu.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/kursi-tamu</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Halaman Detail Produk Lemari & Storage -->
   <url>
-    <loc>https://perlengkapankantor.web.id/lemari-arsip-besi.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/lemari-arsip-besi</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/filing-cabinet.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/filing-cabinet</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/rak-buku.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/rak-buku</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/locker-karyawan.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/locker-karyawan</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Halaman Informasi & Artikel -->
+  <!-- Halaman Informasi & Artikel Blog -->
   <url>
-    <loc>https://perlengkapankantor.web.id/tentang.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/tentang</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/kontak.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/kontak</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/blog.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/blog</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://perlengkapankantor.web.id/10-kursi-kantor-ergonomis-terbaik</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://perlengkapankantor.web.id/blog-tren-desain-interior-2026.html</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://perlengkapankantor.web.id/paket-hemat-meja-kursi-belajar-kerja</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://perlengkapankantor.web.id/rekomendasi-penghancur-kertas</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

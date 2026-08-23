@@ -1,5 +1,5 @@
 /* ============================================================
-   SCROLL ANIMATIONS - Stature Corporate Furnishings
+   SCROLL ANIMATIONS - Perlengkapan Kantor
    Lightweight scroll-triggered animations using IntersectionObserver.
    Only uses transform & opacity (GPU-composited) — zero LCP impact.
    ============================================================ */
