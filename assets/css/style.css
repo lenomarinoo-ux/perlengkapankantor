@@ -4181,6 +4181,16 @@ img, video, iframe {
   .scf-sidebar-card {
     padding: 1.1rem 1rem;
   }
+
+  .scf-author-box {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 1.25rem 1rem !important;
+  }
+
+  .scf-author-box img {
+    margin: 0 auto 0.5rem auto !important;
+  }
 }
 
 /* ============================================================
