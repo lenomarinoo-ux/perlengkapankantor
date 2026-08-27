@@ -61,7 +61,6 @@
    BASE & TYPOGRAPHY
    ============================================================ */
 html {
-  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -70,7 +69,6 @@ html {
   background-color: var(--scf-cream-base);
   color: var(--scf-on-surface);
   line-height: 1.6;
-  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -3904,11 +3902,19 @@ img, video, iframe {
   color: #fff;
 }
 
-/* ══════════════════════════════════════
-   SIDEBAR
-   ══════════════════════════════════════ */
-.scf-sidebar {
-  /* scrolls normally with the page */
+.scf-article-page .row {
+  align-items: flex-start;
+}
+
+@media (min-width: 992px) {
+  .scf-sidebar {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 90px !important;
+    z-index: 100 !important;
+    align-self: flex-start !important;
+    display: block !important;
+  }
 }
 
 .scf-sidebar-card {
