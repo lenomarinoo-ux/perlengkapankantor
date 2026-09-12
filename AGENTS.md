@@ -19,7 +19,9 @@ Setiap kali pengguna meminta untuk membuat artikel blog baru, AI **WAJIB** mengi
    - Footer Artikel `.scf-article-footer` (Tags & Share row)
    - Sidebar `.scf-sidebar` (CTA, Artikel Terkait, Kategori Terkait Pilihan)
    - Footer halaman, Tombol Scroll to Top (`#scf-scroll-top`), dan WhatsApp FAB (`.scf-wa-fab`).
-3. **Aturan Gambar**: Jangan menduplikasi gambar lain untuk memalsukan gambar baru. Selalu sertakan fallback `onerror="this.src='assets/img/web/hero-bg.webp';"`.
+3. **Aturan Gambar**:
+   - Jangan menduplikasi gambar lain untuk memalsukan gambar baru. Selalu sertakan fallback `onerror="this.src='assets/img/web/hero-bg.webp';"`.
+   - **Aset Artikel Terkait (Sidebar)**: Gunakan file thumbnail aktual yang benar-benar ada di `assets/img/blog/` (periksa referensi nyata di `blog.html`). Selalu sertakan fallback `onerror="this.src='assets/img/logo/favicon.png'"` pada thumbnail sidebar.
 4. **Alur Integrasi Pasca-Generate**:
    - Tambahkan artikel ke grid teratas di `blog.html`.
    - Tambahkan URL artikel ke `sitemap.xml`.
