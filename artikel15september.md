@@ -3,11 +3,11 @@
 
 ---
 
-## [01] 5 Masalah Kesehatan Akibat Kursi Kantor yang Tidak Ergonomis
-- **Target Keyword:** `bahaya kursi kantor tidak ergonomis`
-- **Cluster:** Ergonomic Workspace Setup
+## [01] 7 Barang Perlengkapan Kantor yang Paling Sering Hilang & Cara Mengatasinya
+- **Target Keyword:** `barang kantor paling sering hilang`
+- **Cluster:** Bulk Procurement & B2B Solutions
 - **Journey Stage:** TOFU
-- **CTA:** Konsultasi Ergonomi via WA
+- **CTA:** Kirim RFQ Pengadaan Kantor
 
 ```markdown
 # MASTER PROMPT — SINGLE COMMERCIAL AUTHORITY ARTICLE (TEMPLATE 01)
@@ -17,14 +17,14 @@ Anda adalah seorang Senior B2B Content Strategist, SEO/AEO/GEO Architect, dan Co
 Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi dengan Search Intent Komersial yang secara proaktif mengedukasi sekaligus mengarahkan pembaca untuk melakukan pemesanan ke PerlengkapanKantor. Di akhir output, berikan 5 Prompt Visual AI Hero Image.
 
 ## 1. PARAMETER ARTIKEL
-- **Judul Artikel:** 5 Masalah Kesehatan Akibat Kursi Kantor yang Tidak Ergonomis
-- **Target Keyword Utama:** bahaya kursi kantor tidak ergonomis
-- **Supporting / Secondary Keywords:** sakit leher akibat duduk salah, penyakit akibat duduk lama
-- **URL Slug:** /blog/bahaya-kursi-kantor-tidak-ergonomis
+- **Judul Artikel:** 7 Barang Perlengkapan Kantor yang Paling Sering Hilang & Cara Mengatasinya
+- **Target Keyword Utama:** barang kantor paling sering hilang
+- **Supporting / Secondary Keywords:** manajemen aset atk kantor, cara kontrol stok atk
+- **URL Slug:** /blog/barang-kantor-paling-sering-hilang
 - **Nama Brand / Website:** PerlengkapanKantor
-- **Target Audience:** Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Ergonomic Workspace Setup di industri Perlengkapan Kantor.
+- **Target Audience:** Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Bulk Procurement & B2B Solutions di industri Perlengkapan Kantor.
 - **Search Intent:** Commercial (Komersial) & Transactional
-- **Target Call to Action (CTA):** Konsultasi Ergonomi via WA
+- **Target Call to Action (CTA):** Kirim RFQ Pengadaan Kantor
 - **Bahasa:** Indonesia (Profesional, otoritatif, persuasif, elegan)
 
 ## 2. ATURAN PENULISAN & LARANGAN KETAT
@@ -33,12 +33,12 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
    - Meta Title wajib memancing klik untuk Google Discover dengan intensi komersial, panjang 55-60 karakter.
    - Meta Description wajib padat, menonjolkan nilai jual, maksimal 150 karakter dengan CTA.
 2. **Aturan Pembuka (Answer Capsule & AI Overview):**
-   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung bahaya kursi kantor tidak ergonomis.
+   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung barang kantor paling sering hilang.
    - 3 kalimat pertama paragraf pembuka HARUS langsung, lugas, dan komprehensif menjawab pertanyaan umum terkait topik (Teknik Piramida Terbalik).
    - Setelah paragraf pembuka, sertakan **Ringkasan Inti** dalam 3-5 bullet points.
 3. **Format & Gaya Artikel:**
    - Susun dalam format Artikel Reguler/Normal yang mengalir logis (BUKAN listicle bernomor).
-   - Minimal 40% heading H2/H3 berbentuk pertanyaan natural yang sering diketik oleh Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Ergonomic Workspace Setup di industri Perlengkapan Kantor..
+   - Minimal 40% heading H2/H3 berbentuk pertanyaan natural yang sering diketik oleh Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Bulk Procurement & B2B Solutions di industri Perlengkapan Kantor..
    - Setiap H2 diawali jawaban langsung (standalone, 20-25 kata) sebelum pembahasan mendalam.
    - Panjang artikel minimal 1.500 kata.
    - Dilarang keras membahas atau merekomendasikan vendor lain di luar PerlengkapanKantor.
@@ -55,15 +55,15 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
 ## 3. FORMAT METADATA WAJIB (Di Awal Konten)
 ```
 Meta Title: <55-60 karakter, komersial, TANPA kata Panduan/Tips Lengkap>
-Slug: </blog/bahaya-kursi-kantor-tidak-ergonomis>
+Slug: </blog/barang-kantor-paling-sering-hilang>
 Meta Description: <maks 150 karakter, kalimat aktif bernilai jual + CTA>
-Focus Keyphrase: <bahaya kursi kantor tidak ergonomis>
+Focus Keyphrase: <barang kantor paling sering hilang>
 Search Intent: Commercial
 Answer Intent: Rekomendasi / Spesifikasi Produk / Solusi B2B
 Primary Entity: <entitas utama produk/layanan>
 Secondary Entities: <3-5 entitas pendukung>
 Query Fan-Out: <3 variasi pertanyaan AI Overview>
-Audience: Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Ergonomic Workspace Setup di industri Perlengkapan Kantor.
+Audience: Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Bulk Procurement & B2B Solutions di industri Perlengkapan Kantor.
 Suggested Schema: Article, Product, FAQPage
 Author: Tim Spesialis PerlengkapanKantor
 Last Updated: <YYYY-MM-DD>
@@ -80,8 +80,8 @@ Sisipkan tepat 2 gambar pendukung di dalam isi artikel (bukan di prompt visual A
 - **Format file:** .webp.
 - **Ukuran file:** di bawah 100 KB per gambar (untuk menjaga skor page speed/Core Web Vitals — hindari elemen visual yang membebani loading, khususnya di atas fold).
 - **Relevansi:** gambar harus sesuai konteks paragraf tempatnya disisipkan (mis. produk Perlengkapan Kantor yang sedang dibahas di section tersebut), bukan gambar generik.
-- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/bahaya-kursi-kantor-tidak-ergonomis-01.webp, /blog/bahaya-kursi-kantor-tidak-ergonomis-02.webp.
-- **Alt text:** deskriptif, natural, mengandung bahaya kursi kantor tidak ergonomis atau secondary keyword yang relevan, maksimal 125 karakter.
+- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/barang-kantor-paling-sering-hilang-01.webp, /blog/barang-kantor-paling-sering-hilang-02.webp.
+- **Alt text:** deskriptif, natural, mengandung barang kantor paling sering hilang atau secondary keyword yang relevan, maksimal 125 karakter.
 - **Format Markdown:** Sisipkan dalam Markdown dengan format: `![<alt text>](<nama-file>.webp)`
 - **Metadata:** Cantumkan baris Images di bagian METADATA (section 3) sesuai data gambar yang disisipkan.
 
@@ -100,11 +100,11 @@ Tuliskan artikel lengkap sekarang dalam format Markdown 100% yang rapi dan siap 
 
 ---
 
-## [02] Ulasan Mesin Penghancur Kertas Portabel Murah di Bawah 1 Juta Rupiah
-- **Target Keyword:** `mesin penghancur kertas murah`
-- **Cluster:** Office Technology & Essentials
+## [02] Bandingkan Partisi Ruangan Gypsum vs Partisi Kaca Tempered
+- **Target Keyword:** `partisi gypsum vs kaca tempered`
+- **Cluster:** Modern Office Design
 - **Journey Stage:** MOFU
-- **CTA:** Unduh Katalog Tekno Kantor
+- **CTA:** Konsultasi Desain Tata Ruang
 
 ```markdown
 # MASTER PROMPT — SINGLE COMMERCIAL AUTHORITY ARTICLE (TEMPLATE 01)
@@ -114,14 +114,14 @@ Anda adalah seorang Senior B2B Content Strategist, SEO/AEO/GEO Architect, dan Co
 Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi dengan Search Intent Komersial yang secara proaktif mengedukasi sekaligus mengarahkan pembaca untuk melakukan pemesanan ke PerlengkapanKantor. Di akhir output, berikan 5 Prompt Visual AI Hero Image.
 
 ## 1. PARAMETER ARTIKEL
-- **Judul Artikel:** Ulasan Mesin Penghancur Kertas Portabel Murah di Bawah 1 Juta Rupiah
-- **Target Keyword Utama:** mesin penghancur kertas murah
-- **Supporting / Secondary Keywords:** paper shredder portable murah, penghancur kertas kecil
-- **URL Slug:** /blog/mesin-penghancur-kertas-murah
+- **Judul Artikel:** Bandingkan Partisi Ruangan Gypsum vs Partisi Kaca Tempered
+- **Target Keyword Utama:** partisi gypsum vs kaca tempered
+- **Supporting / Secondary Keywords:** harga sekat ruangan gypsum kantor, partisi kaca tempered
+- **URL Slug:** /blog/partisi-gypsum-vs-kaca-tempered
 - **Nama Brand / Website:** PerlengkapanKantor
-- **Target Audience:** Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Office Technology & Essentials.
+- **Target Audience:** Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Modern Office Design.
 - **Search Intent:** Commercial (Komersial) & Transactional
-- **Target Call to Action (CTA):** Unduh Katalog Tekno Kantor
+- **Target Call to Action (CTA):** Konsultasi Desain Tata Ruang
 - **Bahasa:** Indonesia (Profesional, otoritatif, persuasif, elegan)
 
 ## 2. ATURAN PENULISAN & LARANGAN KETAT
@@ -130,12 +130,12 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
    - Meta Title wajib memancing klik untuk Google Discover dengan intensi komersial, panjang 55-60 karakter.
    - Meta Description wajib padat, menonjolkan nilai jual, maksimal 150 karakter dengan CTA.
 2. **Aturan Pembuka (Answer Capsule & AI Overview):**
-   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung mesin penghancur kertas murah.
+   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung partisi gypsum vs kaca tempered.
    - 3 kalimat pertama paragraf pembuka HARUS langsung, lugas, dan komprehensif menjawab pertanyaan umum terkait topik (Teknik Piramida Terbalik).
    - Setelah paragraf pembuka, sertakan **Ringkasan Inti** dalam 3-5 bullet points.
 3. **Format & Gaya Artikel:**
    - Susun dalam format Artikel Reguler/Normal yang mengalir logis (BUKAN listicle bernomor).
-   - Minimal 40% heading H2/H3 berbentuk pertanyaan natural yang sering diketik oleh Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Office Technology & Essentials..
+   - Minimal 40% heading H2/H3 berbentuk pertanyaan natural yang sering diketik oleh Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Modern Office Design..
    - Setiap H2 diawali jawaban langsung (standalone, 20-25 kata) sebelum pembahasan mendalam.
    - Panjang artikel minimal 1.500 kata.
    - Dilarang keras membahas atau merekomendasikan vendor lain di luar PerlengkapanKantor.
@@ -152,15 +152,15 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
 ## 3. FORMAT METADATA WAJIB (Di Awal Konten)
 ```
 Meta Title: <55-60 karakter, komersial, TANPA kata Panduan/Tips Lengkap>
-Slug: </blog/mesin-penghancur-kertas-murah>
+Slug: </blog/partisi-gypsum-vs-kaca-tempered>
 Meta Description: <maks 150 karakter, kalimat aktif bernilai jual + CTA>
-Focus Keyphrase: <mesin penghancur kertas murah>
+Focus Keyphrase: <partisi gypsum vs kaca tempered>
 Search Intent: Commercial
 Answer Intent: Rekomendasi / Spesifikasi Produk / Solusi B2B
 Primary Entity: <entitas utama produk/layanan>
 Secondary Entities: <3-5 entitas pendukung>
 Query Fan-Out: <3 variasi pertanyaan AI Overview>
-Audience: Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Office Technology & Essentials.
+Audience: Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Modern Office Design.
 Suggested Schema: Article, Product, FAQPage
 Author: Tim Spesialis PerlengkapanKantor
 Last Updated: <YYYY-MM-DD>
@@ -177,8 +177,8 @@ Sisipkan tepat 2 gambar pendukung di dalam isi artikel (bukan di prompt visual A
 - **Format file:** .webp.
 - **Ukuran file:** di bawah 100 KB per gambar (untuk menjaga skor page speed/Core Web Vitals — hindari elemen visual yang membebani loading, khususnya di atas fold).
 - **Relevansi:** gambar harus sesuai konteks paragraf tempatnya disisipkan (mis. produk Perlengkapan Kantor yang sedang dibahas di section tersebut), bukan gambar generik.
-- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/mesin-penghancur-kertas-murah-01.webp, /blog/mesin-penghancur-kertas-murah-02.webp.
-- **Alt text:** deskriptif, natural, mengandung mesin penghancur kertas murah atau secondary keyword yang relevan, maksimal 125 karakter.
+- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/partisi-gypsum-vs-kaca-tempered-01.webp, /blog/partisi-gypsum-vs-kaca-tempered-02.webp.
+- **Alt text:** deskriptif, natural, mengandung partisi gypsum vs kaca tempered atau secondary keyword yang relevan, maksimal 125 karakter.
 - **Format Markdown:** Sisipkan dalam Markdown dengan format: `![<alt text>](<nama-file>.webp)`
 - **Metadata:** Cantumkan baris Images di bagian METADATA (section 3) sesuai data gambar yang disisipkan.
 
@@ -197,11 +197,11 @@ Tuliskan artikel lengkap sekarang dalam format Markdown 100% yang rapi dan siap 
 
 ---
 
-## [03] Harga Meja Komputer Laci Minimalis Bahan Kayu Solid
-- **Target Keyword:** `harga meja komputer kayu solid`
-- **Cluster:** Home Office & Remote Work
+## [03] Jual Kertas Thermal Roll Grosir Murah untuk Printer Kasir Jakarta
+- **Target Keyword:** `jual kertas thermal grosir jakarta`
+- **Cluster:** ATK Esensial & Filing Systems
 - **Journey Stage:** BOFU
-- **CTA:** Beli Paket WFH Hemat
+- **CTA:** Beli Paket ATK Bulanan
 
 ```markdown
 # MASTER PROMPT — SINGLE COMMERCIAL AUTHORITY ARTICLE (TEMPLATE 01)
@@ -211,14 +211,14 @@ Anda adalah seorang Senior B2B Content Strategist, SEO/AEO/GEO Architect, dan Co
 Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi dengan Search Intent Komersial yang secara proaktif mengedukasi sekaligus mengarahkan pembaca untuk melakukan pemesanan ke PerlengkapanKantor. Di akhir output, berikan 5 Prompt Visual AI Hero Image.
 
 ## 1. PARAMETER ARTIKEL
-- **Judul Artikel:** Harga Meja Komputer Laci Minimalis Bahan Kayu Solid
-- **Target Keyword Utama:** harga meja komputer kayu solid
-- **Supporting / Secondary Keywords:** meja kerja kayu jati jepara, supplier meja wfh murah
-- **URL Slug:** /blog/harga-meja-komputer-kayu-solid
+- **Judul Artikel:** Jual Kertas Thermal Roll Grosir Murah untuk Printer Kasir Jakarta
+- **Target Keyword Utama:** jual kertas thermal grosir jakarta
+- **Supporting / Secondary Keywords:** harga kertas kasir thermal roll, supplier kertas thermal
+- **URL Slug:** /blog/jual-kertas-thermal-grosir-jakarta
 - **Nama Brand / Website:** PerlengkapanKantor
 - **Target Audience:** Pengambil keputusan (Decision Makers), Manajer Pengadaan/Procurement, HR & Facility Manager, atau Pemilik Bisnis (Perlengkapan Kantor) yang membutuhkan solusi langsung, efisiensi anggaran, dan transaksi cepat.
 - **Search Intent:** Commercial (Komersial) & Transactional
-- **Target Call to Action (CTA):** Beli Paket WFH Hemat
+- **Target Call to Action (CTA):** Beli Paket ATK Bulanan
 - **Bahasa:** Indonesia (Profesional, otoritatif, persuasif, elegan)
 
 ## 2. ATURAN PENULISAN & LARANGAN KETAT
@@ -227,7 +227,7 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
    - Meta Title wajib memancing klik untuk Google Discover dengan intensi komersial, panjang 55-60 karakter.
    - Meta Description wajib padat, menonjolkan nilai jual, maksimal 150 karakter dengan CTA.
 2. **Aturan Pembuka (Answer Capsule & AI Overview):**
-   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung harga meja komputer kayu solid.
+   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung jual kertas thermal grosir jakarta.
    - 3 kalimat pertama paragraf pembuka HARUS langsung, lugas, dan komprehensif menjawab pertanyaan umum terkait topik (Teknik Piramida Terbalik).
    - Setelah paragraf pembuka, sertakan **Ringkasan Inti** dalam 3-5 bullet points.
 3. **Format & Gaya Artikel:**
@@ -249,9 +249,9 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
 ## 3. FORMAT METADATA WAJIB (Di Awal Konten)
 ```
 Meta Title: <55-60 karakter, komersial, TANPA kata Panduan/Tips Lengkap>
-Slug: </blog/harga-meja-komputer-kayu-solid>
+Slug: </blog/jual-kertas-thermal-grosir-jakarta>
 Meta Description: <maks 150 karakter, kalimat aktif bernilai jual + CTA>
-Focus Keyphrase: <harga meja komputer kayu solid>
+Focus Keyphrase: <jual kertas thermal grosir jakarta>
 Search Intent: Commercial
 Answer Intent: Rekomendasi / Spesifikasi Produk / Solusi B2B
 Primary Entity: <entitas utama produk/layanan>
@@ -274,8 +274,8 @@ Sisipkan tepat 2 gambar pendukung di dalam isi artikel (bukan di prompt visual A
 - **Format file:** .webp.
 - **Ukuran file:** di bawah 100 KB per gambar (untuk menjaga skor page speed/Core Web Vitals — hindari elemen visual yang membebani loading, khususnya di atas fold).
 - **Relevansi:** gambar harus sesuai konteks paragraf tempatnya disisipkan (mis. produk Perlengkapan Kantor yang sedang dibahas di section tersebut), bukan gambar generik.
-- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/harga-meja-komputer-kayu-solid-01.webp, /blog/harga-meja-komputer-kayu-solid-02.webp.
-- **Alt text:** deskriptif, natural, mengandung harga meja komputer kayu solid atau secondary keyword yang relevan, maksimal 125 karakter.
+- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/jual-kertas-thermal-grosir-jakarta-01.webp, /blog/jual-kertas-thermal-grosir-jakarta-02.webp.
+- **Alt text:** deskriptif, natural, mengandung jual kertas thermal grosir jakarta atau secondary keyword yang relevan, maksimal 125 karakter.
 - **Format Markdown:** Sisipkan dalam Markdown dengan format: `![<alt text>](<nama-file>.webp)`
 - **Metadata:** Cantumkan baris Images di bagian METADATA (section 3) sesuai data gambar yang disisipkan.
 
