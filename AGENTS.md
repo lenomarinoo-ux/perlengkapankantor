@@ -1,3 +1,4 @@
+
 # Aturan Workspace Perlengkapan Kantor
 
 Setiap kali pengguna meminta untuk membuat artikel blog baru, AI **WAJIB** mengikuti panduan standar di [.agents/rules/article-template.md](.agents/rules/article-template.md):
