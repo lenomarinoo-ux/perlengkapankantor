@@ -1,13 +1,13 @@
 # Master SEO Content Prompts (1 Articles)
-*Generated automatically by SEO Prompt Studio on 19/9/2026*
+*Generated automatically by SEO Prompt Studio on 20/9/2026*
 
 ---
 
-## [01] Bandingkan Mesin Absensi Sidik Jari (Fingerprint) vs Deteksi Wajah (Face ID)
-- **Target Keyword:** `mesin absensi sidik jari vs wajah`
-- **Cluster:** Office Technology & Essentials
-- **Journey Stage:** MOFU
-- **CTA:** Unduh Katalog Tekno Kantor
+## [01] Cara Menghitung Nilai Inventaris Perlengkapan Kantor dengan Metode FIFO
+- **Target Keyword:** `menghitung inventaris kantor fifo`
+- **Cluster:** Bulk Procurement & B2B Solutions
+- **Journey Stage:** TOFU
+- **CTA:** Kirim RFQ Pengadaan Kantor
 
 ```markdown
 # MASTER PROMPT — SINGLE COMMERCIAL AUTHORITY ARTICLE (TEMPLATE 01)
@@ -17,14 +17,14 @@ Anda adalah seorang Senior B2B Content Strategist, SEO/AEO/GEO Architect, dan Co
 Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi dengan Search Intent Komersial yang secara proaktif mengedukasi sekaligus mengarahkan pembaca untuk melakukan pemesanan ke PerlengkapanKantor. Di akhir output, berikan 5 Prompt Visual AI Hero Image.
 
 ## 1. PARAMETER ARTIKEL
-- **Judul Artikel:** Bandingkan Mesin Absensi Sidik Jari (Fingerprint) vs Deteksi Wajah (Face ID)
-- **Target Keyword Utama:** mesin absensi sidik jari vs wajah
-- **Supporting / Secondary Keywords:** harga fingerprint kantor, absensi face id murah
-- **URL Slug:** /blog/mesin-absensi-sidik-jari-vs-wajah
+- **Judul Artikel:** Cara Menghitung Nilai Inventaris Perlengkapan Kantor dengan Metode FIFO
+- **Target Keyword Utama:** menghitung inventaris kantor fifo
+- **Supporting / Secondary Keywords:** rumus inventaris atk kantor, contoh spreadsheet inventaris
+- **URL Slug:** /blog/menghitung-inventaris-kantor-fifo
 - **Nama Brand / Website:** PerlengkapanKantor
-- **Target Audience:** Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Office Technology & Essentials.
+- **Target Audience:** Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Bulk Procurement & B2B Solutions di industri Perlengkapan Kantor.
 - **Search Intent:** Commercial (Komersial) & Transactional
-- **Target Call to Action (CTA):** Unduh Katalog Tekno Kantor
+- **Target Call to Action (CTA):** Kirim RFQ Pengadaan Kantor
 - **Bahasa:** Indonesia (Profesional, otoritatif, persuasif, elegan)
 
 ## 2. ATURAN PENULISAN & LARANGAN KETAT
@@ -33,12 +33,12 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
    - Meta Title wajib memancing klik untuk Google Discover dengan intensi komersial, panjang 55-60 karakter.
    - Meta Description wajib padat, menonjolkan nilai jual, maksimal 150 karakter dengan CTA.
 2. **Aturan Pembuka (Answer Capsule & AI Overview):**
-   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung mesin absensi sidik jari vs wajah.
+   - Tepat di bawah H1, tuliskan **ANSWER CAPSULE**: 20-25 kata yang langsung menjawab inti kebutuhan pembaca secara standalone dan mengandung menghitung inventaris kantor fifo.
    - 3 kalimat pertama paragraf pembuka HARUS langsung, lugas, dan komprehensif menjawab pertanyaan umum terkait topik (Teknik Piramida Terbalik).
    - Setelah paragraf pembuka, sertakan **Ringkasan Inti** dalam 3-5 bullet points.
 3. **Format & Gaya Artikel:**
    - Susun dalam format Artikel Reguler/Normal yang mengalir logis (BUKAN listicle bernomor).
-   - Minimal 40% heading H2/H3 berbentuk pertanyaan natural yang sering diketik oleh Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Office Technology & Essentials..
+   - Minimal 40% heading H2/H3 berbentuk pertanyaan natural yang sering diketik oleh Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Bulk Procurement & B2B Solutions di industri Perlengkapan Kantor..
    - Setiap H2 diawali jawaban langsung (standalone, 20-25 kata) sebelum pembahasan mendalam.
    - Panjang artikel minimal 1.500 kata.
    - Dilarang keras membahas atau merekomendasikan vendor lain di luar PerlengkapanKantor.
@@ -55,15 +55,15 @@ Tugas Anda adalah menyusun SATU artikel komprehensif berstandar otoritas tinggi 
 ## 3. FORMAT METADATA WAJIB (Di Awal Konten)
 ```
 Meta Title: <55-60 karakter, komersial, TANPA kata Panduan/Tips Lengkap>
-Slug: </blog/mesin-absensi-sidik-jari-vs-wajah>
+Slug: </blog/menghitung-inventaris-kantor-fifo>
 Meta Description: <maks 150 karakter, kalimat aktif bernilai jual + CTA>
-Focus Keyphrase: <mesin absensi sidik jari vs wajah>
+Focus Keyphrase: <menghitung inventaris kantor fifo>
 Search Intent: Commercial
 Answer Intent: Rekomendasi / Spesifikasi Produk / Solusi B2B
 Primary Entity: <entitas utama produk/layanan>
 Secondary Entities: <3-5 entitas pendukung>
 Query Fan-Out: <3 variasi pertanyaan AI Overview>
-Audience: Profesional, Tim Operasional Kantor, atau Konsumen Cerdas yang sedang membandingkan merk, spesifikasi teknis, harga, dan keunggulan produk kategori Office Technology & Essentials.
+Audience: Pekerja profesional, manajer operasional, pemilik usaha baru, atau individu yang mencari wawasan, edukasi panduan, dan tips seputar Bulk Procurement & B2B Solutions di industri Perlengkapan Kantor.
 Suggested Schema: Article, Product, FAQPage
 Author: Tim Spesialis PerlengkapanKantor
 Last Updated: <YYYY-MM-DD>
@@ -80,8 +80,8 @@ Sisipkan tepat 2 gambar pendukung di dalam isi artikel (bukan di prompt visual A
 - **Format file:** .webp.
 - **Ukuran file:** di bawah 100 KB per gambar (untuk menjaga skor page speed/Core Web Vitals — hindari elemen visual yang membebani loading, khususnya di atas fold).
 - **Relevansi:** gambar harus sesuai konteks paragraf tempatnya disisipkan (mis. produk Perlengkapan Kantor yang sedang dibahas di section tersebut), bukan gambar generik.
-- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/mesin-absensi-sidik-jari-vs-wajah-01.webp, /blog/mesin-absensi-sidik-jari-vs-wajah-02.webp.
-- **Alt text:** deskriptif, natural, mengandung mesin absensi sidik jari vs wajah atau secondary keyword yang relevan, maksimal 125 karakter.
+- **Penamaan file:** deskriptif dan mengandung keyword, format kebab-case, contoh: /blog/menghitung-inventaris-kantor-fifo-01.webp, /blog/menghitung-inventaris-kantor-fifo-02.webp.
+- **Alt text:** deskriptif, natural, mengandung menghitung inventaris kantor fifo atau secondary keyword yang relevan, maksimal 125 karakter.
 - **Format Markdown:** Sisipkan dalam Markdown dengan format: `![<alt text>](<nama-file>.webp)`
 - **Metadata:** Cantumkan baris Images di bagian METADATA (section 3) sesuai data gambar yang disisipkan.
 

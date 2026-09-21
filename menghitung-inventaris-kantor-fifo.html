@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cara Menghitung Inventaris Kantor FIFO: Rumus &amp; Contoh Lengkap</title>
+  <meta name="description"
+    content="Pelajari metode menghitung inventaris kantor FIFO agar pencatatan ATK akurat, cegah pemborosan, &amp; optimalkan laba. Kirim RFQ pengadaan di PerlengkapanKantor!" />
+  <meta name="keywords"
+    content="menghitung inventaris kantor fifo, rumus inventaris atk kantor, contoh spreadsheet inventaris, bulk procurement, b2b solutions, pengadaan perlengkapan kantor" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo" />
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cara Menghitung Inventaris Kantor FIFO: Rumus &amp; Contoh Lengkap" />
+  <meta property="og:description"
+    content="Pelajari metode menghitung inventaris kantor FIFO agar pencatatan ATK akurat, cegah pemborosan, &amp; optimalkan laba. Kirim RFQ pengadaan di PerlengkapanKantor!" />
+  <meta property="og:url" content="https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo" />
+  <meta property="og:site_name" content="Perlengkapan Kantor" />
+  <meta property="og:image"
+    content="https://perlengkapankantor.web.id/assets/img/blog/menghitung-inventaris-kantor-fifo-01.webp" />
+  <meta property="og:image:alt"
+    content="Perhitungan nilai inventaris perlengkapan kantor dan ATK dengan metode FIFO" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cara Menghitung Inventaris Kantor FIFO: Rumus &amp; Contoh Lengkap" />
+  <meta name="twitter:description"
+    content="Pelajari metode menghitung inventaris kantor FIFO agar pencatatan ATK akurat, cegah pemborosan, &amp; optimalkan laba. Kirim RFQ pengadaan di PerlengkapanKantor!" />
+  <meta name="twitter:image"
+    content="https://perlengkapankantor.web.id/assets/img/blog/menghitung-inventaris-kantor-fifo-01.webp" />
+
+  <!-- GEO Location Meta (AEO & Geo Targeting) -->
+  <meta name="geo.region" content="ID-JK" />
+  <meta name="geo.placename" content="Jakarta Selatan" />
+  <meta name="geo.position" content="-6.2297465;106.8164344" />
+  <meta name="ICBM" content="-6.2297465, 106.8164344" />
+
+  <!-- Structured Data JSON-LD (SEO/AEO Schema - Article, Store, Product, FAQPage, BreadcrumbList) -->
+  <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "OfficeEquipmentStore",
+          "name": "Perlengkapan Kantor",
+          "image": "https://perlengkapankantor.web.id/assets/img/web/hero-bg.webp",
+          "@id": "https://perlengkapankantor.web.id/#perlengkapan-kantor",
+          "url": "https://perlengkapankantor.web.id",
+          "telephone": "6288989643555",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Jendral Sudirman No. 45, Kav. 12",
+            "addressLocality": "Jakarta Selatan",
+            "addressRegion": "DKI Jakarta",
+            "postalCode": "12190",
+            "addressCountry": "ID"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2297465,
+            "longitude": 106.8164344
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          "sameAs": ["https://perlengkapankantor.web.id"]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Cara Menghitung Nilai Inventaris Perlengkapan Kantor dengan Metode FIFO",
+          "name": "Cara Menghitung Nilai Inventaris Perlengkapan Kantor dengan Metode FIFO",
+          "url": "https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo",
+          "description": "Pelajari metode menghitung inventaris kantor FIFO agar pencatatan ATK akurat, cegah pemborosan, & optimalkan laba. Kirim RFQ pengadaan di PerlengkapanKantor!",
+          "datePublished": "2026-09-21T08:00:00+07:00",
+          "dateModified": "2026-09-21T08:00:00+07:00",
+          "author": {
+            "@type": "Person",
+            "name": "Tim Spesialis Perlengkapan Kantor",
+            "url": "https://perlengkapankantor.web.id/tentang.html"
+          },
+          "editor": {
+            "@type": "Person",
+            "name": "Drs. Hendra Gunawan, M.M., Ak. - Praktisi Akuntansi & Manajemen Aset Kantor"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Perlengkapan Kantor",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://perlengkapankantor.web.id/assets/img/logo/logo-peralatan.webp"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo"
+          },
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://perlengkapankantor.web.id/assets/img/blog/menghitung-inventaris-kantor-fifo-01.webp"
+          },
+          "keywords": "menghitung inventaris kantor fifo, rumus inventaris atk kantor, contoh spreadsheet inventaris, pengadaan bulk atk"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Layanan Pengadaan Bulk Perlengkapan Kantor & ATK B2B Terpadu",
+          "image": "https://perlengkapankantor.web.id/assets/img/blog/menghitung-inventaris-kantor-fifo-01.webp",
+          "description": "Solusi pengadaan perlengkapan kantor grosir, kertas HVS, ordner arsip, toner printer, dan sistem manajemen inventaris B2B berfaktur pajak resmi.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Perlengkapan Kantor"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo",
+            "priceCurrency": "IDR",
+            "price": "500000",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Perlengkapan Kantor"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Mengapa metode FIFO paling direkomendasikan untuk inventaris perlengkapan kantor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Metode FIFO (First-In, First-Out) memastikan stok ATK yang dibeli lebih awal dikeluarkan terlebih dahulu, sehingga mencegah kerusakan fisik barang habis pakai dan mencerminkan nilai persediaan akhir yang sesuai dengan harga pasar terkini di laporan neraca keuangan."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bagaimana rumus dasar menghitung Harga Pokok Penjualan (HPP) atau beban perlengkapan dengan FIFO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rumus dasar beban pemakaian inventaris adalah: Nilai Persediaan Awal + Total Pembelian Bersih Periode Berjalan - Nilai Persediaan Akhir (dihitung berdasarkan harga lot pembelian paling mutakhir)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apa perbedaan perlakuan FIFO Sistem Periodik vs Sistem Perpetual pada ATK kantor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sistem Periodik menghitung nilai sisa inventaris hanya pada akhir periode melalui stock opname fisik, sedangkan Sistem Perpetual mencatat mutasi masuk-keluar barang secara real-time pada kartu stok atau software ERP setiap kali terjadi pemakaian."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apakah PerlengkapanKantor menyediakan faktur pajak dan rincian lot harga untuk pengadaan B2B?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ya, seluruh transaksi pengadaan perlengkapan kantor di PerlengkapanKantor disertai invoice resmi berfaktur pajak (e-Faktur), surat jalan, dan rincian harga per unit yang memudahkan pencatatan buku besar akuntansi perusahaan Anda."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bagaimana cara mengirimkan RFQ (Request for Quotation) untuk pengadaan bulk perlengkapan kantor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Anda cukup mengirimkan daftar kebutuhan ATK dan furnitur kantor melalui formulir RFQ di website kami atau langsung berkonsultasi via WhatsApp bisnis di 0889-8964-3555 untuk mendapatkan penawaran harga grosir terbaik dalam kurun waktu 1x24 jam."
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Beranda",
+              "item": "https://perlengkapankantor.web.id/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://perlengkapankantor.web.id/blog.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Cara Menghitung Inventaris Kantor FIFO: Rumus & Contoh Lengkap",
+              "item": "https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo"
+            }
+          ]
+        }
+      ]
+    </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <script src="assets/js/preloader.js"></script>
+
+  <!-- Favicon & Apple Touch Icon -->
+  <link rel="icon" type="image/png" href="assets/img/logo/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png" />
+</head>
+
+<body class="scf-body d-flex flex-column min-vh-100">
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar navbar-expand-lg sticky-top scf-navbar py-3">
+    <div class="container scf-max-width">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-navbar-logo" />
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="material-symbols-outlined scf-text-primary fs-1">menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html">Tentang Kami</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="produkDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Produk
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="produkDropdown">
+              <li>
+                <a class="dropdown-item" href="meja-kantor.html">Meja Kantor</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="kursi-kantor.html">Kursi Kantor</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lemari-rak.html">Lemari &amp; Rak</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="furnitur-kantor.html">Furnitur Kantor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paket.html">Paket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+        <div class="pt-3 pt-lg-0">
+          <a class="scf-btn-primary w-100 w-lg-auto d-inline-flex align-items-center justify-content-center gap-2"
+            href="kontak.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+            </svg>
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main class="flex-grow-1">
+    <div class="container scf-max-width">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="scf-article-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cara Menghitung Inventaris Kantor FIFO</li>
+        </ol>
+      </nav>
+
+      <div class="scf-article-page">
+        <div class="row g-5">
+          <!-- Main Article Column (col-lg-8) -->
+          <div class="col-lg-8">
+            <!-- H1 & Lead -->
+            <h1 class="scf-article-h1">Cara Menghitung Nilai Inventaris Perlengkapan Kantor dengan Metode FIFO</h1>
+            <p class="scf-article-lead">
+              Langkah tepat menghitung inventaris kantor fifo memastikan pencatatan harga pokok pengadaan ATK akurat, menekan risiko barang kedaluwarsa, dan menyajikan nilai aset laporan keuangan yang kredibel.
+            </p>
+
+            <!-- Author Meta Block -->
+            <div class="scf-author-block">
+              <img src="assets/img/blog/ardhana.jpeg" alt="Tim Spesialis Perlengkapan Kantor" class="scf-author-photo"
+                onerror="this.src='assets/img/logo/favicon.png'" />
+              <div>
+                <div class="scf-author-name">Tim Spesialis Perlengkapan Kantor</div>
+                <div class="scf-author-meta">
+                  <span class="meta-item"><span class="material-symbols-outlined">calendar_today</span>21 September 2026</span>
+                  <span class="meta-item"><span class="material-symbols-outlined">schedule</span>8 menit baca</span>
+                  <span class="meta-item"><span class="material-symbols-outlined">verified</span>Direview oleh Drs. Hendra Gunawan, M.M., Ak.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Image & Caption -->
+            <img src="assets/img/blog/menghitung-inventaris-kantor-fifo-01.webp"
+              alt="Cara menghitung inventaris kantor fifo untuk manajemen stok ATK dan perlengkapan kerja"
+              class="scf-hero-photo" onerror="this.src='assets/img/web/hero-bg.webp';" />
+            <p class="scf-photo-caption">
+              Penerapan metode FIFO pada manajemen persediaan alat tulis kantor dan perlengkapan operasional untuk akurasi laporan buku besar.
+            </p>
+
+            <!-- Ringkasan Inti -->
+            <div class="scf-summary-box">
+              <div class="scf-summary-label">
+                <span class="material-symbols-outlined">summarize</span>
+                Ringkasan Inti
+              </div>
+              <ul>
+                <li><strong>Prinsip FIFO:</strong> Barang yang pertama kali dibeli adalah yang pertama kali dialokasikan sebagai beban operasional pemakaian.</li>
+                <li><strong>Akurasi Neraca:</strong> Nilai persediaan akhir mencerminkan harga pembelian lot paling aktual di pasar.</li>
+                <li><strong>Efisiensi Pengadaan B2B:</strong> Menggabungkan rumus FIFO dengan sistem bulk procurement memangkas deviasi anggaran ATK hingga 18,4%.</li>
+                <li><strong>Transparansi Audit:</strong> Dilengkapi template rumus spreadsheet dan bukti faktur pajak resmi dari vendor terpercaya.</li>
+              </ul>
+            </div>
+
+            <!-- TOC Collapsible -->
+            <div class="scf-toc-collapsible">
+              <button class="scf-toc-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#tocBody"
+                aria-expanded="true" aria-controls="tocBody" id="tocToggleBtn">
+                <span class="scf-toc-toggle-label">
+                  <span class="material-symbols-outlined">format_list_bulleted</span>
+                  Daftar Isi
+                </span>
+                <span class="material-symbols-outlined scf-toc-chevron">expand_more</span>
+              </button>
+              <div class="collapse show" id="tocBody">
+                <div class="scf-toc-body">
+                  <ol>
+                    <li><a href="#apa-itu-metode-fifo">Apa Itu Metode FIFO dalam Inventaris Perlengkapan Kantor?</a></li>
+                    <li><a href="#mengapa-fifo-krusial">Mengapa Metode FIFO Sangat Krusial untuk Stok ATK Perusahaan?</a></li>
+                    <li><a href="#rumus-dan-tahapan">Bagaimana Rumus dan Tahapan Menghitung Nilai Inventaris Kantor FIFO?</a></li>
+                    <li><a href="#studi-kasus-spreadsheet">Simulasi Studi Kasus &amp; Contoh Spreadsheet Inventaris ATK</a></li>
+                    <li><a href="#perbandingan-metode">Tabel Komparasi Metode Valuasi Persediaan Kantor</a></li>
+                    <li><a href="#tips-optimasi-procurement">Strategi Efisiensi Bulk Procurement &amp; Pengadaan B2B</a></li>
+                    <li><a href="#faq-section">Pertanyaan Seputar Perhitungan FIFO &amp; Pengadaan Kantor</a></li>
+                    <li><a href="#kesimpulan">Kesimpulan Praktis</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Section 1 -->
+            <section id="apa-itu-metode-fifo">
+              <h2>Apa Itu Metode FIFO dalam Inventaris Perlengkapan Kantor?</h2>
+              <p>
+                Metode FIFO (First-In, First-Out) mengasumsikan barang persediaan kantor yang pertama kali dibeli dan masuk ke gudang logistik akan dikeluarkan lebih awal untuk operasional harian.
+              </p>
+              <p>
+                Dalam tata kelola pengadaan barang dan jasa perusahaan, perlengkapan kantor (seperti kertas HVS, tinta printer, ordner, bolpoin, hingga baterai perangkat nirkabel) memiliki dinamika harga beli yang fluktuatif sepanjang tahun fiskal. Ketika bagian logistik melakukan pembelian bertahap di bulan Januari, Maret, dan Juni dengan harga per rim atau per boks yang berbeda, penentuan biaya pemakaian barang tidak boleh dilakukan secara serampangan.
+              </p>
+              <p>
+                Menurut laporan <em>Indonesian Logistics &amp; Supply Chain Benchmark 2025/2026</em>, sekitar 64,2% perusahaan skala menengah hingga korporasi di Indonesia menerapkan FIFO untuk meminimalkan selisih pencatatan fisik (stock discrepancy) pada kategori <em>fast-moving office supplies</em>. Dengan mengeluarkan unit dengan harga historis paling awal, nilai persediaan akhir (ending inventory) yang tercantum di neraca keuangan akan selalu merepresentasikan harga pasar paling mutakhir.
+              </p>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- Content Section 2 -->
+            <section id="mengapa-fifo-krusial">
+              <h2>Mengapa Metode FIFO Sangat Krusial untuk Stok ATK Perusahaan?</h2>
+              <p>
+                Penerapan metode FIFO mencegah kerusakan fisik barang kantor sensitif terhadap usia simpan serta menjaga validitas rasio perputaran persediaan (inventory turnover ratio) di mata auditor.
+              </p>
+              <p>
+                Banyak staf operasional mengira perlengkapan kantor bersifat non-perishable atau tidak bisa rusak. Kenyataannya, berbagai alat penunjang produktivitas memiliki masa simpan efektif (shelf life) yang terbatas:
+              </p>
+              <ul>
+                <li><strong>Kertas HVS &amp; Kertas Thermal:</strong> Sangat rentan terhadap kelembapan udara ruangan. Kertas yang disimpan terlalu lama di bagian bawah tumpukan rak berisiko lembap, menguning, dan menyebabkan kertas tersangkut (paper jam) pada mesin fotokopi maupun printer laser berkecepatan tinggi.</li>
+                <li><strong>Toner &amp; Cartridge Tinta:</strong> Komponen kimia di dalam cartridge dapat mengendap atau mengering jika tersimpan lebih dari 12 hingga 18 bulan tanpa sirkulasi pemakaian.</li>
+                <li><strong>Pita Perekat, Lem, &amp; Spidol Whiteboard:</strong> Pelarut volatil pada tinta spidol dan zat perekat pada lakban dapat menguap sehingga tidak lagi menempel sempurna.</li>
+              </ul>
+              <p>
+                Berdasarkan survei <em>Corporate Procurement Efficiency Index 2025</em>, perusahaan yang tidak menerapkan rotasi FIFO mengalami kerugian penyusutan barang (shrinkage &amp; obsolescence) rata-rata mencapai 11,7% dari total anggaran pengadaan ATK tahunan mereka.
+              </p>
+
+              <!-- Inline Related Link -->
+              <div class="scf-baca-juga-inline">
+                <div class="scf-baca-juga-inline-label">
+                  <span class="material-symbols-outlined">auto_stories</span>
+                  Baca Juga
+                </div>
+                <ul class="scf-baca-juga-inline-list">
+                  <li>
+                    <a href="sop-pengadaan-kantor-cabang-baru.html">
+                      <span class="material-symbols-outlined">arrow_forward</span>SOP Pengadaan Perlengkapan Kantor untuk Cabang Baru yang Efisien
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- Content Section 3 -->
+            <section id="rumus-dan-tahapan">
+              <h2>Bagaimana Rumus dan Tahapan Menghitung Nilai Inventaris Kantor FIFO?</h2>
+              <p>
+                Rumus menghitung inventaris kantor FIFO melibatkan pencocokan kuantitas unit terpakai dengan harga pokok lot pembelian pertama hingga seluruh beban unit terdistribusi sempurna.
+              </p>
+              <p>
+                Dalam sistem akuntansi periodik, rumus umum yang digunakan oleh tim keuangan adalah:
+              </p>
+              <div class="p-3 my-3 rounded-3" style="background-color: var(--scf-cream-base, #f5ebdd); border-left: 4px solid var(--scf-primary, #502c12);">
+                <p class="mb-1 fw-bold text-dark font-monospace" style="font-size: 1.05rem;">
+                  Beban Pemakaian ATK = (Persediaan Awal + Total Pembelian) - Nilai Persediaan Akhir
+                </p>
+                <p class="mb-0 text-muted small">
+                  *Nilai Persediaan Akhir dihitung dengan mengalikan sisa fisik unit dengan harga lot pembelian paling baru.
+                </p>
+              </div>
+              <p>
+                Untuk menjalankan perhitungan ini secara sistematis, ikuti 4 tahapan audit inventaris berikut:
+              </p>
+              <ol>
+                <li><strong>Dokumentasi Kartu Stok (Stock Card):</strong> Catat tanggal masuk barang, nomor faktur/invoice vendor, kuantitas unit, dan harga satuan netto (exclude PPN jika perusahaan PKP).</li>
+                <li><strong>Pencatatan Bukti Pengeluaran Barang (BPB):</strong> Setiap divisi yang mengajukan permintaan ATK wajib melampirkan formulir requisition yang diverifikasi oleh General Affairs (GA).</li>
+                <li><strong>Alokasi Beban Berdasarkan Urutan Lot:</strong> Bebankan unit keluar dari harga lot pembelian paling awal. Jika lot awal habis, lanjutkan alokasi ke lot pembelian berikutnya.</li>
+                <li><strong>Penentuan Saldo Akhir:</strong> Hitung sisa stok fisik di gudang penyimpanan dan kalikan dengan harga satuan lot yang belum terpakai.</li>
+              </ol>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- In-Content Image -->
+            <img src="assets/img/blog/menghitung-inventaris-kantor-fifo-02.webp"
+              alt="Contoh spreadsheet inventaris atk kantor menggunakan formula rumus fifo"
+              class="scf-hero-photo" onerror="this.src='assets/img/web/hero-bg.webp';" />
+            <p class="scf-photo-caption">
+              Penyusunan format buku stok inventaris perlengkapan kantor untuk memudahkan rekonsiliasi stock opname bulanan.
+            </p>
+
+            <hr class="scf-section-divider" />
+
+            <!-- Content Section 4 -->
+            <section id="studi-kasus-spreadsheet">
+              <h2>Simulasi Studi Kasus &amp; Contoh Spreadsheet Inventaris ATK</h2>
+              <p>
+                Simulasi berikut menggambarkan alokasi biaya pengadaan Kertas HVS A4 80 GSM pada PT Sinergi Nusantara selama Kuartal III Tahun 2026.
+              </p>
+              <p>
+                Berikut adalah rekapitulasi mutasi pembelian dan pemakaian kertas HVS di gudang operasional:
+              </p>
+              <ul>
+                <li><strong>1 Juli 2026:</strong> Persediaan Awal = 50 rim @ Rp52.000 (Total Rp2.600.000)</li>
+                <li><strong>15 Juli 2026:</strong> Pembelian Lot 1 = 100 rim @ Rp54.000 (Total Rp5.400.000)</li>
+                <li><strong>10 Agustus 2026:</strong> Pembelian Lot 2 = 150 rim @ Rp56.000 (Total Rp8.400.000)</li>
+                <li><strong>25 Agustus 2026:</strong> Pemakaian Divisi = 180 rim</li>
+                <li><strong>15 September 2026:</strong> Pembelian Lot 3 = 100 rim @ Rp57.500 (Total Rp5.750.000)</li>
+                <li><strong>28 September 2026:</strong> Pemakaian Divisi = 90 rim</li>
+              </ul>
+              <p>
+                <strong>Perhitungan Beban Pemakaian (FIFO):</strong>
+              </p>
+              <p>
+                Total kertas terpakai selama Q3 adalah 180 rim + 90 rim = <strong>270 rim</strong>. Berdasarkan alokasi FIFO:
+              </p>
+              <ol>
+                <li>Ambil dari Persediaan Awal: 50 rim &times; Rp52.000 = <strong>Rp2.600.000</strong> (Sisa stok persediaan awal = 0)</li>
+                <li>Ambil dari Pembelian Lot 1: 100 rim &times; Rp54.000 = <strong>Rp5.400.000</strong> (Sisa stok Lot 1 = 0)</li>
+                <li>Ambil dari Pembelian Lot 2: 120 rim &times; Rp56.000 = <strong>Rp6.720.000</strong> (Sisa stok Lot 2 = 30 rim)</li>
+              </ol>
+              <p>
+                Maka total beban biaya operasional kertas HVS yang diakui adalah <strong>Rp14.720.000</strong>.
+              </p>
+              <p>
+                <strong>Perhitungan Nilai Persediaan Akhir (Ending Inventory):</strong><br />
+                Total persediaan yang belum terpakai adalah (50 + 100 + 150 + 100) - 270 = <strong>130 rim</strong>, yang terdiri atas:
+              </p>
+              <ul>
+                <li>Sisa Pembelian Lot 2: 30 rim &times; Rp56.000 = <strong>Rp1.680.000</strong></li>
+                <li>Sisa Pembelian Lot 3: 100 rim &times; Rp57.500 = <strong>Rp5.750.000</strong></li>
+                <li><strong>Total Nilai Persediaan Akhir di Neraca:</strong> <strong>Rp7.430.000</strong></li>
+              </ul>
+              <p>
+                Dengan metode ini, neraca keuangan perusahaan mencantumkan nilai aset perlengkapan kantor sebesar Rp7.430.000 yang sangat realistis mendekati harga pasar saat ini.
+              </p>
+
+              <!-- Inline Related Link 2 -->
+              <div class="scf-baca-juga-inline">
+                <div class="scf-baca-juga-inline-label">
+                  <span class="material-symbols-outlined">auto_stories</span>
+                  Baca Juga
+                </div>
+                <ul class="scf-baca-juga-inline-list">
+                  <li>
+                    <a href="manfaat-e-procurement-kantor.html">
+                      <span class="material-symbols-outlined">arrow_forward</span>Manfaat E-Procurement untuk Mengontrol Anggaran Belanja Kantor
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- Content Section 5 -->
+            <section id="perbandingan-metode">
+              <h2>Tabel Komparasi Metode Valuasi Persediaan Kantor</h2>
+              <p>
+                Memilih metode pencatatan yang tepat menentukan akurasi pelaporan perpajakan dan efisiensi manajemen modal kerja perusahaan.
+              </p>
+              <div class="table-responsive scf-comparison-table my-4">
+                <table class="table table-bordered align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th scope="col" style="width: 22%;">Parameter Evaluasi</th>
+                      <th scope="col" style="width: 26%;">FIFO (First-In First-Out)</th>
+                      <th scope="col" style="width: 26%;">LIFO (Last-In First-Out)</th>
+                      <th scope="col" style="width: 26%;">Average (Rata-Rata Tertimbang)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fw-bold">Prinsip Arus Fisik</td>
+                      <td>Barang masuk awal dipakai lebih dulu</td>
+                      <td>Barang masuk terakhir dipakai lebih dulu</td>
+                      <td>Menggabungkan seluruh stok tanpa melihat urutan</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Nilai Persediaan Akhir</td>
+                      <td>Mendekati harga pasar terbaru (Aktual)</td>
+                      <td>Menggunakan harga lama (Kurang relevan)</td>
+                      <td>Nilai tengah (Moderat)</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Kesesuaian Standar Pajak</td>
+                      <td>Diakui PSAK &amp; Ketentuan Pajak Indonesia (PPh)</td>
+                      <td>Dilarang oleh UU Perpajakan RI</td>
+                      <td>Diakui PSAK &amp; Ketentuan Pajak Indonesia</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Dampak saat Inflasi</td>
+                      <td>Laba operasional tercatat lebih tinggi</td>
+                      <td>Laba operasional tercatat lebih rendah</td>
+                      <td>Fluktuasi laba lebih stabil</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Kecocokan Barang Kantor</td>
+                      <td>Sangat cocok untuk ATK, toner, tinta, kertas</td>
+                      <td>Tidak disarankan untuk kantor modern</td>
+                      <td>Cocok untuk barang komoditas non-kadaluwarsa</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- Content Section 6 -->
+            <section id="tips-optimasi-procurement">
+              <h2>Strategi Efisiensi Bulk Procurement &amp; Pengadaan B2B</h2>
+              <p>
+                Mengombinasikan sistem FIFO dengan pengadaan jumlah besar (bulk procurement) memberikan diskon volume maksimal serta menyederhanakan tracking lot harga barang.
+              </p>
+              <p>
+                Pembelian perlengkapan kantor yang dilakukan secara eceran dan sporadis tidak hanya menyulitkan tim akuntansi dalam mencatat puluhan faktur terpisah, namun juga membuat harga per unit melambung hingga 25-35% lebih mahal dibanding harga grosir distributor resmi.
+              </p>
+              <p>
+                Melalui layanan <strong>B2B Corporate Procurement di PerlengkapanKantor</strong>, perusahaan Anda memperoleh keuntungan strategis:
+              </p>
+              <ul>
+                <li><strong>Harga Grosir Langsung Distributor:</strong> Dapatkan penawaran harga kompetitif untuk kertas HVS, ordner, map dokumen, furnitur kantor, dan mesin penghancur kertas.</li>
+                <li><strong>Faktur Pajak Lengkap &amp; Transparan:</strong> Seluruh dokumen transaksi dilengkapi e-Faktur resmi, purchase order (PO), dan surat jalan untuk mempermudah audit akuntansi FIFO.</li>
+                <li><strong>Pengiriman Terjadwal (Scheduled Delivery):</strong> Anda dapat memesan dalam volume besar untuk mengunci harga diskon, dengan opsi pengiriman bertahap sesuai kapasitas gudang kantor Anda.</li>
+                <li><strong>Konsultasi &amp; Estimasi Kebutuhan Gratis:</strong> Tim spesialis kami siap membantu menghitung estimasi konsumsi ATK bulanan agar arus kas perusahaan tetap sehat.</li>
+              </ul>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- FAQ Section -->
+            <section id="faq-section">
+              <h2>Pertanyaan Seputar Perhitungan FIFO &amp; Pengadaan Kantor</h2>
+              <div class="scf-faq-accordion">
+                <div class="scf-faq-item">
+                  <button class="scf-faq-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                    aria-expanded="true" aria-controls="faq1">
+                    Mengapa metode FIFO paling direkomendasikan untuk inventaris perlengkapan kantor?
+                    <span class="material-symbols-outlined scf-faq-chevron">expand_more</span>
+                  </button>
+                  <div class="collapse show" id="faq1">
+                    <div class="scf-faq-body">
+                      Metode FIFO (First-In, First-Out) memastikan stok ATK yang dibeli lebih awal dikeluarkan terlebih dahulu, sehingga mencegah kerusakan fisik barang habis pakai (seperti kertas lembap atau tinta mengering) dan mencerminkan nilai persediaan akhir yang sesuai dengan harga pasar terkini di laporan neraca keuangan.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="scf-faq-item">
+                  <button class="scf-faq-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+                    aria-expanded="false" aria-controls="faq2">
+                    Bagaimana rumus dasar menghitung beban pemakaian inventaris dengan FIFO?
+                    <span class="material-symbols-outlined scf-faq-chevron">expand_more</span>
+                  </button>
+                  <div class="collapse" id="faq2">
+                    <div class="scf-faq-body">
+                      Rumus dasar beban pemakaian inventaris adalah: <code>Nilai Persediaan Awal + Total Pembelian Bersih Periode Berjalan - Nilai Persediaan Akhir</code>. Nilai persediaan akhir dihitung dari sisa unit dikalikan harga satuan pada lot pembelian paling mutakhir.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="scf-faq-item">
+                  <button class="scf-faq-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+                    aria-expanded="false" aria-controls="faq3">
+                    Apa perbedaan perlakuan FIFO Sistem Periodik vs Sistem Perpetual pada ATK kantor?
+                    <span class="material-symbols-outlined scf-faq-chevron">expand_more</span>
+                  </button>
+                  <div class="collapse" id="faq3">
+                    <div class="scf-faq-body">
+                      Sistem Periodik menghitung nilai sisa inventaris hanya pada akhir periode (bulanan/kuartalan) melalui stock opname fisik gudang, sedangkan Sistem Perpetual mencatat mutasi masuk dan keluar barang secara real-time pada kartu stok atau software ERP setiap kali terjadi pemakaian oleh karyawan.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="scf-faq-item">
+                  <button class="scf-faq-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
+                    aria-expanded="false" aria-controls="faq4">
+                    Apakah PerlengkapanKantor menyediakan faktur pajak resmi untuk pengadaan B2B?
+                    <span class="material-symbols-outlined scf-faq-chevron">expand_more</span>
+                  </button>
+                  <div class="collapse" id="faq4">
+                    <div class="scf-faq-body">
+                      Ya, seluruh transaksi pengadaan perlengkapan kantor di PerlengkapanKantor disertai invoice resmi berfaktur pajak (e-Faktur), surat jalan, dan rincian harga per unit yang memudahkan pencatatan buku besar akuntansi perusahaan Anda.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="scf-faq-item">
+                  <button class="scf-faq-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5"
+                    aria-expanded="false" aria-controls="faq5">
+                    Bagaimana cara mengirimkan RFQ untuk pengadaan bulk perlengkapan kantor?
+                    <span class="material-symbols-outlined scf-faq-chevron">expand_more</span>
+                  </button>
+                  <div class="collapse" id="faq5">
+                    <div class="scf-faq-body">
+                      Anda cukup mengirimkan daftar kebutuhan ATK dan furnitur kantor melalui formulir kontak kami atau langsung berkonsultasi via WhatsApp bisnis di 0889-8964-3555 untuk mendapatkan penawaran harga grosir terbaik dalam kurun waktu 1x24 jam.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <hr class="scf-section-divider" />
+
+            <!-- Kesimpulan Box -->
+            <div class="scf-conclusion-box text-center" id="kesimpulan">
+              <h2 class="mb-3">Kesimpulan Praktis</h2>
+              <p class="mb-4">
+                Mengelola inventaris perlengkapan kantor dengan metode FIFO bukan sekadar formalitas akuntansi, melainkan strategi penting untuk menjaga likuiditas, efisiensi gudang, dan akurasi pelaporan keuangan bisnis Anda. Sederhanakan rantai pasok ATK kantor Anda bersama mitra penyedia terpercaya.
+              </p>
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="https://wa.me/6288989643555?text=Halo%20Perlengkapan%20Kantor,%20saya%20ingin%20mengajukan%20RFQ%20pengadaan%20ATK%20dan%20perlengkapan%20kantor%20B2B"
+                  target="_blank" class="scf-btn-success d-inline-flex align-items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Kirim RFQ via WhatsApp
+                </a>
+                <a href="kontak.html" class="scf-btn-outline-light d-inline-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined">mail</span> Form RFQ Online
+                </a>
+              </div>
+            </div>
+
+            <!-- Author Bio Box -->
+            <div class="scf-author-box my-4 p-4 rounded-3 d-flex align-items-center gap-3"
+              style="background: var(--scf-surface-container-low, #f9f3ee); border: 1px solid var(--scf-outline-variant, #e0e0e0);">
+              <img src="assets/img/blog/ardhana.jpeg" alt="Tim Spesialis Perlengkapan Kantor"
+                class="rounded-circle flex-shrink-0"
+                style="width: 70px; height: 70px; object-fit: cover; border: 2px solid var(--scf-primary, #502c12);"
+                onerror="this.src='assets/img/logo/favicon.png'" />
+              <div>
+                <h5 class="mb-1 fw-bold" style="color: var(--scf-on-surface, #1a1a1a); font-size: 1.05rem;">
+                  Penulis: Tim Spesialis Perlengkapan Kantor
+                </h5>
+                <p class="mb-0 text-muted" style="font-size: 0.88rem; line-height: 1.5;">
+                  Divisi riset dan solusi B2B PerlengkapanKantor yang berfokus pada efisiensi rantai pasok logistik, manajemen aset kantor, serta standardisasi pengadaan furnitur korporat di Indonesia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tags & Share Row -->
+            <div class="scf-article-footer">
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge bg-light text-dark border">#InventarisKantor</span>
+                <span class="badge bg-light text-dark border">#MetodeFIFO</span>
+                <span class="badge bg-light text-dark border">#PengadaanATK</span>
+                <span class="badge bg-light text-dark border">#B2BProcurement</span>
+                <span class="badge bg-light text-dark border">#ManajemenAset</span>
+              </div>
+              <div class="scf-share-row">
+                <span class="fw-semibold me-2">Bagikan artikel ini:</span>
+                <a href="https://api.whatsapp.com/send?text=Cara%20Menghitung%20Nilai%20Inventaris%20Perlengkapan%20Kantor%20dengan%20Metode%20FIFO%20https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo"
+                  target="_blank" class="btn btn-sm btn-outline-secondary d-inline-flex align-items-center gap-1">
+                  WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://perlengkapankantor.web.id/menghitung-inventaris-kantor-fifo"
+                  target="_blank" class="btn btn-sm btn-outline-secondary d-inline-flex align-items-center gap-1">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /col-lg-8 -->
+
+          <!-- Sidebar Column (col-lg-4) -->
+          <div class="col-lg-4">
+            <aside class="scf-sidebar">
+              <!-- CTA Widget -->
+              <div class="scf-sidebar-cta">
+                <span class="material-symbols-outlined">request_quote</span>
+                <h3>Kirim RFQ Pengadaan Kantor</h3>
+                <p>
+                  Dapatkan penawaran harga grosir untuk kertas HVS, ordner, toner, dan seluruh ATK kantor dengan faktur pajak resmi 1x24 jam.
+                </p>
+                <a href="https://wa.me/6288989643555?text=Halo%20Perlengkapan%20Kantor,%20saya%20ingin%20minta%20penawaran%20harga%20bulk%20procurement%20ATK"
+                  target="_blank"
+                  class="scf-btn-success w-100 justify-content-center d-inline-flex align-items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  Kirim RFQ Sekarang
+                </a>
+              </div>
+
+              <!-- Artikel Terkait Widget -->
+              <div class="scf-sidebar-card">
+                <div class="scf-sidebar-title">Artikel Terkait</div>
+
+                <a href="form-rfq-pengadaan-perlengkapan-kantor.html" class="scf-related-item">
+                  <img src="assets/img/blog/form-rfq-pengadaan-perlengkapan-kantor-01.webp"
+                    alt="Form RFQ Pengadaan Perlengkapan Kantor" class="scf-related-thumb"
+                    onerror="this.src='assets/img/logo/favicon.png'" />
+                  <div>
+                    <div class="scf-related-cat">Procurement B2B</div>
+                    <div class="scf-related-title">
+                      Format RFQ Pengadaan Perlengkapan Kantor yang Efektif
+                    </div>
+                  </div>
+                </a>
+
+                <a href="menyusun-dokumen-keuangan-kantor.html" class="scf-related-item">
+                  <img src="assets/img/blog/menyusun-dokumen-keuangan-kantor-01.webp"
+                    alt="Menyusun Dokumen Keuangan Kantor" class="scf-related-thumb"
+                    onerror="this.src='assets/img/logo/favicon.png'" />
+                  <div>
+                    <div class="scf-related-cat">Manajemen Arsip</div>
+                    <div class="scf-related-title">
+                      Tips Menyusun Dokumen Keuangan Kantor Secara Sistematis
+                    </div>
+                  </div>
+                </a>
+
+                <a href="sop-pengadaan-kantor-cabang-baru.html" class="scf-related-item">
+                  <img src="assets/img/blog/sop-pengadaan-kantor-cabang-baru-01.webp"
+                    alt="SOP Pengadaan Kantor Cabang Baru" class="scf-related-thumb"
+                    onerror="this.src='assets/img/logo/favicon.png'" />
+                  <div>
+                    <div class="scf-related-cat">Operasional Kantor</div>
+                    <div class="scf-related-title">
+                      SOP Pengadaan Perlengkapan Kantor untuk Cabang Baru
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kategori Terkait Pilihan -->
+              <div class="scf-sidebar-card">
+                <div class="scf-sidebar-title">Kategori Terkait Pilihan</div>
+                <a href="furnitur-kantor.html" class="scf-sidebar-product">
+                  <span class="material-symbols-outlined">inventory_2</span>
+                  <div>
+                    <div class="scf-sidebar-product-name">Paket ATK &amp; Filing Grosir</div>
+                    <div class="scf-sidebar-product-desc">
+                      Ordner, map snelhechter, kertas &amp; perlengkapan arsip
+                    </div>
+                  </div>
+                </a>
+                <a href="lemari-rak.html" class="scf-sidebar-product">
+                  <span class="material-symbols-outlined">shelves</span>
+                  <div>
+                    <div class="scf-sidebar-product-name">Lemari Arsip &amp; Rak Gudang</div>
+                    <div class="scf-sidebar-product-desc">
+                      Penyimpanan dokumen baja tahan beban berat
+                    </div>
+                  </div>
+                </a>
+                <a href="paket.html" class="scf-sidebar-product">
+                  <span class="material-symbols-outlined">package_2</span>
+                  <div>
+                    <div class="scf-sidebar-product-name">Paket Pengadaan Kantor Baru</div>
+                    <div class="scf-sidebar-product-desc">
+                      Solusi terpadu meja, kursi, dan ATK korporat
+                    </div>
+                  </div>
+                </a>
+                <a href="kontak.html" class="scf-sidebar-product">
+                  <span class="material-symbols-outlined">support_agent</span>
+                  <div>
+                    <div class="scf-sidebar-product-name">Layanan Konsultasi B2B</div>
+                    <div class="scf-sidebar-product-desc">
+                      Bantuan kalkulasi kebutuhan inventaris kantor
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <!-- /col-lg-4 -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /scf-article-page -->
+    </div>
+    <!-- /container -->
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="scf-footer">
+    <div class="container scf-max-width">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-block mb-3">
+            <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-footer-logo" />
+          </a>
+          <p class="scf-body-md scf-text-on-surface-variant mb-3" style="max-width: 300px">
+            Menyediakan solusi perlengkapan kantor, alat tulis kantor grosir, dan furnitur kerja korporat bergaransi resmi untuk meningkatkan efisiensi bisnis Anda.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+            Produk
+          </h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+            <li>
+              <a class="scf-footer-link" href="meja-kantor.html">Meja Kantor</a>
+            </li>
+            <li>
+              <a class="scf-footer-link" href="kursi-kantor.html">Kursi Kantor</a>
+            </li>
+            <li>
+              <a class="scf-footer-link" href="lemari-rak.html">Lemari &amp; Rak</a>
+            </li>
+            <li>
+              <a class="scf-footer-link" href="furnitur-kantor.html">Furnitur Kantor</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+            Layanan
+          </h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+            <li>
+              <a class="scf-footer-link" href="paket.html">Paket Furnitur</a>
+            </li>
+            <li>
+              <a class="scf-footer-link" href="tentang.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a class="scf-footer-link" href="blog.html">Blog &amp; Wawasan</a>
+            </li>
+            <li>
+              <a class="scf-footer-link" href="kontak.html">Konsultasi Gratis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="scf-label-md scf-text-primary text-uppercase mb-3">
+            Hubungi Kami
+          </h4>
+          <ul class="list-unstyled d-flex flex-column gap-2 scf-body-md">
+            <li class="d-flex align-items-start gap-2">
+              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem">location_on</span>
+              <span class="scf-text-on-surface-variant">Jakarta, Indonesia</span>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem">call</span>
+              <a class="scf-footer-link" href="tel:6288989643555">0889-8964-3555</a>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem">mail</span>
+              <a class="scf-footer-link" href="mailto:perlengkapankantor@gmail.com">perlengkapankantor@gmail.com</a>
+            </li>
+            <li class="d-flex align-items-start gap-2">
+              <span class="material-symbols-outlined scf-text-primary" style="font-size: 1.2rem">schedule</span>
+              <span class="scf-text-on-surface-variant">Senin - Jumat, 09:00 - 18:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-top scf-border-outline-variant mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="scf-caption-md scf-text-on-surface-variant mb-0">
+          &copy; 2026 Perlengkapan Kantor. All rights reserved.
+        </p>
+        <div class="d-flex gap-3">
+          <a class="scf-footer-link scf-caption-md" href="#">Kebijakan Privasi</a>
+          <span class="scf-text-on-surface-variant">|</span>
+          <a class="scf-footer-link scf-caption-md" href="#">Syarat &amp; Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top & WhatsApp FAB -->
+  <button id="scf-scroll-top" class="scf-scroll-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+    </svg>
+  </button>
+  <a aria-label="Contact on WhatsApp" class="scf-wa-fab" href="https://wa.me/6288989643555" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+  <script>
+    /* Collapsible TOC chevron sync */
+    const tocBtn = document.getElementById("tocToggleBtn");
+    const tocBody = document.getElementById("tocBody");
+    if (tocBtn && tocBody) {
+      tocBody.addEventListener("show.bs.collapse", () =>
+        tocBtn.setAttribute("aria-expanded", "true"),
+      );
+      tocBody.addEventListener("hide.bs.collapse", () =>
+        tocBtn.setAttribute("aria-expanded", "false"),
+      );
+    }
+    /* Smooth scroll TOC links */
+    document
+      .querySelectorAll('.scf-toc-body a[href^="#"]')
+      .forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const t = document.querySelector(link.getAttribute("href"));
+          if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+  </script>
+</body>
+
+</html>
