@@ -78,12 +78,6 @@
     tag(".scf-section-subtitle", "scf-anim scf-anim-up");
     tag(".scf-section-badge", "scf-anim scf-anim-up");
 
-    // Hero content
-    tag(".scf-hero-badge", "scf-anim scf-anim-up");
-    tag(".scf-hero-title", "scf-anim scf-anim-up");
-    tag(".scf-hero-desc", "scf-anim scf-anim-up");
-    tag(".scf-hero-actions", "scf-anim scf-anim-up");
-
     // Value proposition cards — stagger parent
     tagParentStagger(".scf-value-grid");
     tag(".scf-value-item", "scf-anim scf-anim-up");
