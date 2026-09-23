@@ -465,6 +465,14 @@ img, video, iframe {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .scf-hero {
+    height: auto !important;
+    min-height: 480px;
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+}
 .scf-hero-bg {
   position: absolute;
   inset: 0;
