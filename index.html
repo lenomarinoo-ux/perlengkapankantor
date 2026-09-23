@@ -95,12 +95,12 @@
 
   <!-- Asynchronous Non-Blocking CSS with No-JS Fallback -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=optional" rel="stylesheet" media="print" onload="this.media='all'" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link href="assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=optional" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
   </noscript>
@@ -192,17 +192,28 @@
       background-color: #fff8f5 !important;
       border-bottom: 1px solid #d5c3b9;
       box-shadow: 0 4px 15px rgba(80, 44, 18, 0.08);
+      min-height: 72px;
     }
-    .scf-navbar .navbar-brand {
-      display: inline-block;
-      padding-top: 0.3125rem;
-      padding-bottom: 0.3125rem;
+    @media (max-width: 991.98px) {
+      .scf-navbar {
+        min-height: 56px;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
     }
     .scf-navbar-logo {
       height: 48px;
-      width: auto;
+      width: 126px;
+      aspect-ratio: 564 / 214;
       object-fit: contain;
       display: block;
+    }
+    @media (max-width: 991.98px) {
+      .scf-navbar-logo {
+        height: 40px;
+        width: 105px;
+        aspect-ratio: 564 / 214;
+      }
     }
     .navbar-toggler {
       padding: 0.25rem 0.5rem;
@@ -356,6 +367,7 @@
       max-height: 820px;
       display: flex;
       align-items: center;
+      contain: layout;
     }
     .scf-hero-bg-wrapper {
       position: absolute;
@@ -444,7 +456,7 @@
     @media (max-width: 991.98px) {
       .scf-hero {
         height: auto !important;
-        min-height: 480px;
+        min-height: 500px !important;
         padding-top: 3.5rem !important;
         padding-bottom: 3.5rem !important;
         display: flex !important;
@@ -454,15 +466,19 @@
     @media (max-width: 576px) {
       .scf-hero {
         height: auto !important;
-        min-height: 440px;
+        min-height: 460px !important;
         padding-top: 3rem !important;
         padding-bottom: 3rem !important;
       }
       .scf-hero-title {
         font-size: 1.8rem;
+        line-height: 1.25;
+        min-height: 6.75rem;
       }
       .scf-hero-desc {
         font-size: 0.95rem;
+        line-height: 1.5;
+        min-height: 4.3rem;
       }
       .scf-hero-actions .scf-btn-primary,
       .scf-hero-actions .scf-btn-outline {
@@ -834,7 +850,7 @@
     <div class="container scf-max-width">
       <!-- Brand / Logo -->
       <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-navbar-logo" />
+        <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-navbar-logo" width="105" height="40" />
       </a>
 
       <!-- Toggler Mobile -->
