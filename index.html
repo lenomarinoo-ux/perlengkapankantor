@@ -96,17 +96,14 @@
   <!-- Bootstrap 5 CSS (Local) -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Google Fonts (Swap Display) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" />
-  </noscript>
-
-  <!-- Material Symbols Outlined (Non-blocking) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
-  </noscript>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
 
   <!-- MAIN CSS -->
   <link href="assets/css/style.css" rel="stylesheet" />
@@ -115,6 +112,25 @@
   <!-- PERBAIKAN RESPONSIF MOBILE + ABOUT US IMAGE DI ATAS        -->
   <!-- ========================================================== -->
   <style>
+    /* ---- Hero Background Element ---- */
+    .scf-hero-bg-wrapper {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .scf-hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
     /* ---- Reset overflow ---- */
     html,
     body {
@@ -556,7 +572,7 @@
     <div class="container scf-max-width">
       <!-- Brand / Logo -->
       <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-navbar-logo" width="564" height="214" decoding="async" />
+        <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-navbar-logo" />
       </a>
 
       <!-- Toggler Mobile -->
@@ -1295,7 +1311,7 @@
         <div class="col-lg-4 col-md-6">
           <!-- Logo sebagai pengganti teks STATURE -->
           <a href="index.html" class="d-block mb-3">
-            <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-footer-logo" width="564" height="214" loading="lazy" decoding="async" />
+            <img src="assets/img/logo/logo-peralatan.webp" alt="Perlengkapan Kantor" class="scf-footer-logo" loading="lazy" />
           </a>
           <p class="scf-body-md scf-text-on-surface-variant mb-3" style="max-width: 300px">
             Menyediakan solusi furnitur korporat premium untuk ruang kerja

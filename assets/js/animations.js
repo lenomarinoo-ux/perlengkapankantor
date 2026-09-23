@@ -213,16 +213,22 @@
       }
     }
 
-    function toggleScrollTop() {
-      if (window.scrollY > 300) {
-        scrollTopBtn.classList.add("scf-show");
-      } else {
-        scrollTopBtn.classList.remove("scf-show");
+    var ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          if (window.scrollY > 300) {
+            scrollTopBtn.classList.add("scf-show");
+          } else {
+            scrollTopBtn.classList.remove("scf-show");
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     }
 
-    window.addEventListener("scroll", toggleScrollTop, { passive: true });
-    toggleScrollTop();
+    window.addEventListener("scroll", onScroll, { passive: true });
 
     scrollTopBtn.addEventListener("click", function (e) {
       e.preventDefault();
