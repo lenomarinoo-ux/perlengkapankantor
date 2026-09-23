@@ -93,26 +93,270 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Bootstrap 5 CSS (Local) -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-    rel="stylesheet" />
-
-  <!-- MAIN CSS -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Asynchronous Non-Blocking CSS with No-JS Fallback -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link href="assets/css/style.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </noscript>
 
   <!-- ========================================================== -->
-  <!-- PERBAIKAN RESPONSIF MOBILE + ABOUT US IMAGE DI ATAS        -->
+  <!-- CRITICAL INLINE CSS (Instant Paint, Zero FOUC, Max Speed)  -->
   <!-- ========================================================== -->
   <style>
-    /* ---- Hero Background Element ---- */
+    /* ---- Theme Variables ---- */
+    :root {
+      --scf-primary: #502c12;
+      --scf-primary-container: #6b4226;
+      --scf-primary-fixed: #ffdbc7;
+      --scf-primary-fixed-dim: #f4ba96;
+      --scf-on-primary: #ffffff;
+      --scf-on-primary-container: #e9b08c;
+      --scf-secondary: #7c5730;
+      --scf-background: #fff8f5;
+      --scf-cream-base: #f5ebdd;
+      --scf-cream-surface: #fbf7f0;
+      --scf-surface: #fff8f5;
+      --scf-surface-container-lowest: #ffffff;
+      --scf-surface-container-low: #fbf2ed;
+      --scf-surface-container: #f5ece7;
+      --scf-on-surface: #1e1b18;
+      --scf-on-surface-variant: #51443d;
+      --scf-outline-variant: #d5c3b9;
+    }
+    *, ::after, ::before { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #fff8f5;
+      color: #1e1b18;
+      overflow-x: clip;
+      max-width: 100%;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; vertical-align: middle; }
+    .container {
+      width: 100%;
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media (min-width: 576px) { .container { max-width: 540px; } }
+    @media (min-width: 768px) { .container { max-width: 720px; } }
+    @media (min-width: 992px) { .container { max-width: 960px; } }
+    @media (min-width: 1200px) { .container { max-width: 1140px; } }
+    @media (min-width: 1400px) { .container { max-width: 1320px; } }
+    .scf-max-width { max-width: 1280px; }
+
+    .d-flex { display: flex !important; }
+    .d-inline-flex { display: inline-flex !important; }
+    .flex-column { flex-direction: column !important; }
+    .justify-content-center { justify-content: center !important; }
+    .justify-content-between { justify-content: space-between !important; }
+    .align-items-center { align-items: center !important; }
+    .text-center { text-align: center !important; }
+    .position-relative { position: relative !important; }
+    .z-2 { z-index: 2 !important; }
+    .gap-2 { gap: 0.5rem !important; }
+    .gap-lg-2 { gap: 0.5rem !important; }
+    .mx-auto { margin-right: auto !important; margin-left: auto !important; }
+    .w-100 { width: 100% !important; }
+    .py-3 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+    .border-0 { border: 0 !important; }
+    .shadow-none { box-shadow: none !important; }
+
+    /* ---- Navbar Critical Styles ---- */
+    .navbar {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+    .scf-navbar {
+      position: sticky !important;
+      top: 0 !important;
+      z-index: 9999 !important;
+      background-color: #fff8f5 !important;
+      border-bottom: 1px solid #d5c3b9;
+      box-shadow: 0 4px 15px rgba(80, 44, 18, 0.08);
+    }
+    .scf-navbar .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+    }
+    .scf-navbar-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .navbar-toggler {
+      padding: 0.25rem 0.5rem;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (min-width: 992px) {
+      .navbar-toggler { display: none; }
+    }
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+    }
+    .collapse:not(.show) { display: none; }
+    @media (min-width: 992px) {
+      .navbar-expand-lg { flex-wrap: nowrap; justify-content: flex-start; }
+      .navbar-expand-lg .navbar-collapse { display: flex !important; flex-basis: auto; }
+      .navbar-expand-lg .navbar-nav { flex-direction: row; }
+      .navbar-expand-lg .navbar-nav .nav-link { padding-right: 0.5rem; padding-left: 0.5rem; }
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+    .scf-navbar .nav-link {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.95rem;
+      color: #51443d;
+      font-weight: 500;
+      padding: 0.5rem 1rem !important;
+      transition: all 0.2s ease;
+      position: relative;
+      display: block;
+    }
+    .scf-navbar .nav-link:hover,
+    .scf-navbar .nav-link.active {
+      color: #502c12 !important;
+      font-weight: 600;
+    }
+    @media (min-width: 992px) {
+      .scf-navbar .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        right: 1rem;
+        height: 2px;
+        background-color: #502c12;
+        border-radius: 2px;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .scf-navbar {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+      }
+      .scf-navbar-logo {
+        height: 40px;
+      }
+      .scf-navbar .navbar-collapse {
+        position: absolute;
+        top: calc(100% + 0.4rem);
+        right: 1.25rem;
+        left: auto;
+        width: clamp(240px, 80vw, 320px);
+        background-color: #ffffff;
+        border: 1px solid #d5c3b9;
+        border-radius: 0.85rem;
+        padding: 0.85rem 1rem;
+        box-shadow: 0 16px 36px rgba(80, 44, 18, 0.15);
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+        z-index: 10000;
+      }
+      .scf-navbar .nav-link {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.75rem !important;
+        border-radius: 0.45rem;
+        margin-bottom: 0.15rem;
+      }
+      .scf-navbar .nav-link:hover,
+      .scf-navbar .nav-link.active {
+        background-color: #f5ebdd;
+        color: #502c12 !important;
+        padding-left: 0.9rem !important;
+      }
+    }
+
+    /* ---- Buttons ---- */
+    .scf-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffffff !important;
+      background: linear-gradient(135deg, #502c12 0%, #6b4226 100%);
+      padding: 0.7rem 1.6rem;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 0 4px 14px rgba(80, 44, 18, 0.25);
+      transition: all 0.25s ease;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .scf-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(80, 44, 18, 0.35);
+      color: #ffffff !important;
+    }
+    .scf-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
+      padding: 0.7rem 1.6rem;
+      border-radius: 50px;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .scf-btn-outline:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: #ffffff;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+    }
+
+    /* ---- Hero Critical Styles ---- */
+    .scf-hero {
+      position: relative;
+      width: 100%;
+      min-height: 550px;
+      height: 80vh;
+      max-height: 820px;
+      display: flex;
+      align-items: center;
+    }
     .scf-hero-bg-wrapper {
       position: absolute;
       inset: 0;
@@ -122,13 +366,102 @@
       overflow: hidden;
       pointer-events: none;
     }
-
     .scf-hero-bg-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
       display: block;
+    }
+    .scf-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(30, 20, 12, 0.45) 0%,
+        rgba(30, 20, 12, 0.55) 50%,
+        rgba(30, 20, 12, 0.65) 100%
+      );
+      z-index: 1;
+    }
+    .scf-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+    .scf-hero-badge {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffdbc7;
+      margin-bottom: 0.75rem;
+      background: rgba(80, 44, 18, 0.65);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 219, 199, 0.3);
+      padding: 0.35rem 1.15rem;
+      border-radius: 50px;
+      display: inline-block;
+    }
+    .scf-hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw + 0.8rem, 3.5rem);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+    .scf-hero-desc {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: clamp(1rem, 1.5vw + 0.3rem, 1.25rem);
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+      max-width: 620px;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    .scf-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 576px) {
+      .scf-hero {
+        min-height: 400px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .scf-hero-title {
+        font-size: 1.8rem;
+      }
+      .scf-hero-desc {
+        font-size: 0.95rem;
+      }
+      .scf-hero-actions .scf-btn-primary,
+      .scf-hero-actions .scf-btn-outline {
+        width: 100%;
+        justify-content: center;
+      }
+      .scf-hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+      }
+      .scf-hero-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.75rem;
+      }
     }
 
     /* ---- Reset overflow ---- */
@@ -576,10 +909,12 @@
       </a>
 
       <!-- Toggler Mobile -->
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="material-symbols-outlined scf-text-primary fs-1">menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#502c12" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
       </button>
 
       <!-- Menu -->
